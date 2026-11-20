@@ -2,11 +2,19 @@
 
 **Only for JHSB200V5 (franklin_skyworth)**
 
+**This repo is provided to run debian, fixing bugs is not my reponsibility, it is not a distro distribution**
+
 ## What works
 1. You can run debian alongside having JioOS installed.
 2. Systemd support (Pid 1).
 3. It runs on stock linux kernel `4.9.269` and kernel can't be upgraded.
 4. If you want to check if something works at kernel level check `/proc/config.gz`.
+
+![Shell](https://github.com/ShazuxD/debian_on_jiostb/raw/refs/heads/main/shell.jpg)
+
+## Precaution
+1. Device partitions are still present in `/dev`
+2. Do not try to change kernel or dtb
 
 ### Requirements
 1. JioSTB `JHSB200V5` running firmware `11.3.46`.
@@ -92,7 +100,7 @@
 
 # How to Exit / Enter Again
 
-1. Running `reboot` from terminal directly bootd into stock recovery.
+1. Running `reboot` from terminal directly boots into stock recovery.
 2. Unplug Power to boot into JioOS.
 3. To boot into debian, Run.
       ```bash
@@ -104,6 +112,7 @@
 
 # Others
 
-## Half Baked Gpu baked Weston GUI support with hdmi
+## Half Baked GPU compositor Weston GUI support with hdmi
 1. It may not be fully stable
+2. Stock kernel lacks drm support
  [ShazuxD/mali-wayland-fakedrm](https://github.com/ShazuxD/mali-wayland-fakedrm)
