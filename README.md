@@ -8,6 +8,12 @@
 3. It runs on stock linux kernel `4.9.269` and kernel can't be upgraded.
 4. If you want to check if something works at kernel level check `/proc/config.gz`.
 
+![Shell](https://github.com/ShazuxD/debian_on_jiostb/raw/refs/heads/main/shell.jpg)
+
+## Precaution
+1. Device partitions are still present in `/dev`
+2. Do not try to change kernel or dtb
+
 ### Requirements
 1. JioSTB `JHSB200V5` running firmware `11.3.46`.
 2. Unlocked Bootloader.
