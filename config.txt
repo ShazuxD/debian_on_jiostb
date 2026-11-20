@@ -1,0 +1,35 @@
+# This file holds passwords - keep it private.
+
+# ---------------- Debian ----------------
+SUITE="trixie"
+MIRROR="http://deb.debian.org/debian"
+EXTRA_PKGS=""
+
+# ---------------- System ----------------
+HOSTNAME_="box"
+ROOT_PW=""
+SSH_PORT="2222"
+SSH_PUBKEY=""
+SSH_ROOT_LOGIN="yes"
+LOCALE="en_US.UTF-8"
+TIMEZONE="Etc/UTC"
+
+# ---------------- Wired network ----------------
+STATIC_IP="192.168.29.250/24"
+GATEWAY="192.168.1.1"
+DNS="1.1.1.1 8.8.8.8"
+
+# ---------------- Wi-Fi(optional) ----------------
+WIFI_SSID=""                       
+WIFI_PSK=""                        
+WIFI_COUNTRY="IN"
+
+# ---------------- Modules ----------------
+MODULES_DIR="prebuilts/jhsb200v5/modules"
+MODLIST=""
+FIRMWARE_DIR="prebuilts/jhsb200v5/firmware"
+KERNEL_VERSION=""
+
+# ---------------- Output of setup-tarball.sh ----------------
+OUTPUT="debian-arm64.tar.gz"
+WORKDIR="./rootfs-build"
